@@ -1,11 +1,11 @@
 
-
 const ElementTop = () => {
     return (
         <div className="flex flex-row flex-nowrap justify-between">
             <div className=" w-1/4 ml-24">
 
-                <div className=" bg-gradient-to-tr from-green-400  to-blue-400 text-transparent bg-clip-text no-underline">
+                <div className=" bg-gradient-to-tr from-green-400 
+                 to-blue-400 text-transparent bg-clip-text no-underline">
                     <h1 className="flex flex-col flex-nowrap items-center text-5xl">Welcome to HappyCod</h1>
                 </div>
                 <p className="text-white mt-16 text-xl">
@@ -13,7 +13,8 @@ const ElementTop = () => {
                 </p>
 
             </div>
-            <div className=" w-2/6 h-4/4 flex flex-col flex-nowrap items-center justify-around shadow-2xl rounded-3xl bg-gray-700 ">
+            <div className=" w-2/6 h-4/4 flex flex-col flex-nowrap items-center
+             justify-around shadow-2xl rounded-l-3xl bg-gray-600 ">
 
                 <article className="w-5/6  h-2/4 items-center text-white text-lg ">
 
