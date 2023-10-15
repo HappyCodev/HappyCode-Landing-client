@@ -4,9 +4,9 @@ const ElementTop = () => {
         <div className="flex flex-row flex-nowrap justify-between">
             <div className=" w-1/4 ml-24">
 
-                <div className=" bg-gradient-to-tr from-green-400 
+                <div className=" bg-gradient-to-r from-green-400 via-blue-400
                  to-blue-400 text-transparent bg-clip-text no-underline">
-                    <h1 className="flex flex-col flex-nowrap items-center text-5xl">Welcome to HappyCod</h1>
+                    <h1 className="flex flex-col flex-nowrap items-center text-6xl">Welcome to HappyCod</h1>
                 </div>
                 <p className="text-white mt-16 text-xl">
                     Web Solutions Tailored to Your Business Needs.
@@ -22,7 +22,7 @@ const ElementTop = () => {
                     company aiming to improve your online presence, we've got your back.
 
                 </article>
-                <button class=" bg-gradient-to-tr from-green-400 to-blue-400 rounded-3xl py-1 px-2
+                <button class=" bg-gradient-to-tr from-blue-400 to-green-400 rounded-3xl py-1 px-2
                      text-black  ">
                     Let's get digital!
                 </button>
