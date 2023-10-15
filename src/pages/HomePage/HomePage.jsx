@@ -1,5 +1,5 @@
-import ElementAbout from "./ElementBottom";
-import ElementTop from "./ElementTop";
+import ElementAbout from "./ElementHomePage/ElementBottom";
+import ElementTop from "./ElementHomePage/ElementTop";
 
 
 
