@@ -1,6 +1,4 @@
 import { Button, Container } from 'react-bootstrap'
-import './HomePage.css'
-
 
 const HomePage = () => {
     return (

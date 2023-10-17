@@ -1,4 +1,3 @@
-import './Team.css'
 
 
 const Team = () => {
