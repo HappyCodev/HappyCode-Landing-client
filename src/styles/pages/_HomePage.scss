@@ -1,0 +1,54 @@
+.HomePage {
+
+    // Aki todas scss
+
+}
+
+
+.firstBlock {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.home-Page-Intro {
+    margin-left: 10%;
+    width: 20vw;
+}
+
+
+.home-h1 {
+    font-size: 85px;
+    background-image: $gradient;
+    @include transparent_text;
+
+
+}
+
+.Home-Article {
+    width: 25vw;
+    height: 25vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Home-Article-Button {
+    background-image: $gradient;
+    border: none;
+    width: 50%;
+    border-radius: 30px;
+
+}
+
+.HomePage {
+    background-image: $second_gradient;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+
+}
