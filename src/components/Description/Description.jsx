@@ -1,5 +1,3 @@
-
-
 const Description = () => {
     return (
         <div className='Description' >
@@ -31,9 +29,9 @@ const Description = () => {
 
             <div className='OurMission'>
 
-                <div className='titles'>
-                    <h2>Our Mission</h2>
-                </div>
+
+                <h2>Our Mission</h2>
+
                 <p>
                     Our mission is to empower people through technology by creating clean and
                     efficient web solutions. No hidden costs nor complex structures, we
@@ -46,9 +44,9 @@ const Description = () => {
 
             <div className='OurVision'>
 
-                <div className='titles'>
-                    <h2>Our Vision</h2>
-                </div>
+
+                <h2>Our Vision</h2>
+
                 <p>
                     Our vision is to be the catalyst for the digital transformation, unlocking
                     the full potential of both our team and our customers. Ask us again with 10 years!
@@ -60,9 +58,9 @@ const Description = () => {
 
             <div className='OurObjectives'>
 
-                <div className='titles'>
-                    <h2>Our Objectives</h2>
-                </div>
+
+                <h2>Our Objectives</h2>
+
                 <p>
                     Continuous learning: Research, experiment, improve. 1% better everyday.
                     <br />
