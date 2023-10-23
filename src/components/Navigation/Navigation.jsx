@@ -21,8 +21,9 @@ const Navigation = () => {
             <Link to={'/'}>
                 <img src={logo} alt="HappyCode Logo" />
             </Link>
-            <button onClick={openModal}>Contact Us</button>
-
+            <div className='contact-us-navi-button'>
+                <button className='' onClick={openModal}>Contact Us</button>
+            </div>
             {isModalOpen && (
                 <div className='modal'>
                     <div className='modal-content'>
