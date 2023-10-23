@@ -19,7 +19,6 @@ $ourDivColor: rgba(30, 30, 30, 0.56);
 @mixin h2Style {
     @include transparent_text;
     background-image: $aboutUs_gradient;
-    font-weight: bold;
     font-size: 4rem;
 }
 
