@@ -26,7 +26,7 @@ const Navigation = () => {
             {isModalOpen && (
                 <div className='modal'>
                     <div className='modal-content'>
-                        <span className='close' onClick={closeModal}>&times;</span>
+                        <button className='close' onClick={closeModal}>&times;</button>
                         <Contact />
                     </div>
                 </div>

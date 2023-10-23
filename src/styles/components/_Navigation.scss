@@ -50,11 +50,16 @@
         }
 
         .close {
+            width: 1.5rem;
+            height: 1.6rem;
+            flex-shrink: 0;
             color: white;
             font-size: 28px;
-            font-weight: bold;
             cursor: pointer;
-            text-align: end;
+            margin: 10px, 0px, 10px, 0px;
+            border: 2px solid white;
+            border-radius: 50px;
+
 
         }
     }
