@@ -1,0 +1,90 @@
+.ElementBotton {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+
+    .div-Proyects {
+        position: relative;
+
+        .active {
+            height: 128px;
+        }
+
+        .noActive {
+            height: 88px;
+        }
+
+        .element-Proyect {
+            @include rowJB;
+            align-items: center;
+            width: 40%;
+            background: linear-gradient(to right, #1E40AF, transparent);
+            color: white;
+            border-top-right-radius: 9999px;
+            border-bottom-right-radius: 9999px;
+            transition: all;
+            transition-duration: 0.5s;
+
+            h3 {
+                margin-left: 1.75rem;
+                font-size: 1.85rem;
+                line-height: 2.25rem;
+            }
+
+            .div-p {
+                width: auto;
+                height: 48px;
+                inset: 0.75rem;
+                margin-left: 1.75rem;
+            }
+
+        }
+
+
+
+    }
+
+    .div-About {
+        position: relative;
+
+        .active {
+            height: 128px;
+        }
+
+        .noActive {
+            height: 88px;
+        }
+
+        .element-about {
+            @include rowJB;
+            align-items: center;
+            width: 40%;
+            background: linear-gradient(to right, #4299E1, transparent);
+            color: white;
+            border-top-right-radius: 9999px;
+            border-bottom-right-radius: 9999px;
+            transition: all;
+            transition-duration: 0.5s;
+
+            h3 {
+                margin-left: 1.75rem;
+                font-size: 1.85rem;
+                line-height: 2.25rem;
+            }
+
+            .div-p {
+                width: auto;
+                height: 48px;
+                inset: 0.75rem;
+                margin-left: 1.75rem;
+            }
+
+        }
+
+
+
+    }
+
+
+}
