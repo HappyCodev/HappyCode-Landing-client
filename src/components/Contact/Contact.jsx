@@ -8,7 +8,7 @@ const Contact = () => {
     return (
 
         <div className='contact'>
-            {!state.succeeded ?
+            {state.succeeded ?
                 <>
                     <div class="contact-us-title">
                         <div class="center-content">
