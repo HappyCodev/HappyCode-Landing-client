@@ -1,4 +1,3 @@
-
 $buttonGradient: linear-gradient(20deg, #5799F7, #08FFB8);
 $gradient: linear-gradient(20deg, #08FFB8 -30%, #5799F7);
 $second_gradient: linear-gradient(67deg, #000 0%, rgba(28, 29, 29, 0.89) 41%, rgba(37, 38, 38, 0.85) 69.82%, rgba(60, 62, 62, 0.76) 99.16%);
@@ -47,7 +46,8 @@ $second_gradient: linear-gradient(67deg, #000 0%, rgba(28, 29, 29, 0.89) 41%, rg
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-=======
+}
+
 body {
     background-image: $second_gradient;
 
