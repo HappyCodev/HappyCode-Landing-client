@@ -5,6 +5,7 @@
     justify-content: end;
 
     .div-Proyects {
+
         position: relative;
 
         .active {
@@ -38,9 +39,7 @@
                 inset: 0.75rem;
                 margin-left: 1.75rem;
             }
-
         }
-
 
 
     }
@@ -73,18 +72,92 @@
                 line-height: 2.25rem;
             }
 
-            .div-p {
+            p {
                 width: auto;
                 height: 48px;
                 inset: 0.75rem;
                 margin-left: 1.75rem;
             }
+        }
+    }
+
+
+    .div-Services {
+        @include rowJB;
+        position: relative;
+        background: linear-gradient(to right, #00ff95, transparent);
+        width: 40%;
+        border-top-right-radius: 9999px;
+        border-bottom-right-radius: 9999px;
+        align-items: center;
+
+        .element-Service {
+            @include rowJB;
+            align-items: center;
+            width: 100%;
+            color: black;
+            transition: all;
+            transition-duration: 0.5s;
 
         }
 
+        .active-Services {
+            display: flex;
+            flex-flow: column nowrap;
+            height: 200px;
+        }
 
+        .no-Active-Services {
+            height: 80px;
 
+        }
+
+        .div-P-Service {
+            width: 80%;
+            height: 50px;
+            margin-left: 1.75rem;
+        }
+
+        h3 {
+
+            margin-left: 1.75rem;
+            font-size: 1.85rem;
+            line-height: 2.25rem;
+        }
     }
 
+    .button-Proyect {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border: 2px solid rgb(255, 253, 253);
+        border-radius: 16px;
+        transition-property: transform;
+        transition-duration: 0.8s;
+    }
+
+    .button-Proyect.active-Button {
+        transform: rotate(90deg);
+    }
+
+    .button-Proyect .div-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-Proyect .div-arrow .div-1 {
+        width: 37%;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .button-Proyect .div-arrow .div-2 {
+        width: 8px;
+        height: 8px;
+        background-color: white;
+        transform: rotate(45deg);
+    }
 
 }
