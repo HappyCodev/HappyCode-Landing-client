@@ -8,7 +8,7 @@ const ElementTop = () => {
             <div className='home-Page-Intro'>
 
                 <div className='home-h1'>
-                    <h1>Welcome to HappyCode</h1>
+                    <h1>Welcome to <span>HappyCode</span></h1>
                 </div>
 
                 <p>
