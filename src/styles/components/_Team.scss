@@ -1,11 +1,120 @@
-.Team {
+@mixin photo {
+    height: 16.6875rem;
+    width: 15.6875rem;
+    border: 0.75rem solid #292A2A;
+    border-radius: 50%;
+}
 
+@mixin logosStyle {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5%;
+}
+
+.Team {
     margin-top: 10%;
+    color: white;
+    font-family: 'CabinetGrotesk', sans-serif;
+
 
     h1 {
         @include h2Style;
         text-align: center;
-        font-size: 96px;
+        font-size: 6rem;
+    }
+
+    .membersRow {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .memberCard {
+        width: 15.6875rem;
+        height: 27.4725rem;
+        text-align: center;
+
+
+
+        .memberName {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.75rem;
+            margin-top: 12%;
+        }
+
+        .memberOccupation {
+            font-size: 0.9375rem;
+            font-weight: 300;
+            line-height: 1.3125rem;
+            margin-top: 12%;
+        }
+
+        .memberContact {
+            margin-top: 12%;
+            margin-bottom: 0%;
+            display: flex;
+            justify-content: center;
+
+            .linkedInLogo {
+                background-image: url("/src/assets/icon/linkedin.svg");
+                @include logosStyle();
+                width: 15px;
+                height: 13px;
+            }
+
+            .emailLogo {
+                background-image: url("/src/assets/icon/mail.svg");
+                @include logosStyle();
+                width: 14px;
+                height: 11px;
+            }
+        }
+    }
+
+    .alejandraMamblonaIMG {
+        @include photo();
+        background-image: url("/src/assets/whoweare.png")
+    }
+
+    .isabellaPaivaIMG {
+        @include photo();
+        background-image: url("/src/assets/whoweare.png")
+    }
+
+    .ignacioSansonIMG {
+        @include photo();
+        background-image: url("/src/assets/whoweare.png")
+    }
+
+    .carlosDelgadoIMG {
+        @include photo();
+        background-image: url("/src/assets/whoweare.png")
+    }
+
+    .alejandroRecheIMG {
+        @include photo();
+        background-image: url("/src/assets/whoweare.png")
+    }
+
+    .carlosAlbendizIMG {
+        @include photo();
+        background-image: url("/src/assets/whoweare.png")
+    }
+
+    .ireneBucetaIMG {
+        @include photo();
+        background-image: url("/src/assets/whoweare.png")
+    }
+
+    .joanBenaigesIMG {
+        @include photo();
+        background-image: url("/src/assets/whoweare.png")
+    }
+
+    .rodrigoLopezIMG {
+        @include photo();
+        background-image: url("/src/assets/whoweare.png")
     }
 
 }
