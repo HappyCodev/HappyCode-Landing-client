@@ -3,98 +3,219 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: end;
+    margin-bottom: 81px;
 
-    .div-Proyects {
-
+    .div-Projects {
+        @include rowJB;
         position: relative;
+        background: linear-gradient(90deg, #38369A 27.6%, rgba(56, 54, 154, 0.00) 100%);
+        width: 778px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        align-items: center;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
 
-        .active {
-            height: 128px;
+        a {
+            text-decoration: none
         }
 
-        .noActive {
-            height: 88px;
-        }
-
-        .element-Proyect {
+        .element-Projects {
             @include rowJB;
-            align-items: center;
-            width: 40%;
-            background: linear-gradient(to right, #1E40AF, transparent);
-            color: white;
-            border-top-right-radius: 9999px;
-            border-bottom-right-radius: 9999px;
+            align-items: start;
+            width: 100%;
+            color: #F8F7F3;
             transition: all;
             transition-duration: 0.5s;
+            display: block;
+
+
 
             h3 {
-                margin-left: 1.75rem;
-                font-size: 1.85rem;
-                line-height: 2.25rem;
+                padding-top: 40px;
+                padding-left: 70px;
+                font-size: 55px;
             }
 
-            .div-p {
-                width: auto;
-                height: 48px;
-                inset: 0.75rem;
-                margin-left: 1.75rem;
+            span {
+                font-size: 30px;
+                margin-left: 28px;
+
             }
+
+            p {
+                font-size: 24px;
+                margin-left: 110px;
+                margin-top: 10px;
+            }
+
+
         }
+
+
+
+        .active-Projects {
+            height: 320px;
+        }
+
+        .no-active-Projects {
+            height: 148px;
+
+        }
+
 
 
     }
 
     .div-About {
+        @include rowJB;
         position: relative;
+        background: linear-gradient(90deg, #5799F7 18.75%, rgba(87, 153, 247, 0.00) 100%);
+        width: 778px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        align-items: center;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
 
-        .active {
-            height: 128px;
+        a {
+            text-decoration: none
         }
 
-        .noActive {
-            height: 88px;
-        }
-
-        .element-about {
+        .element-About {
             @include rowJB;
-            align-items: center;
-            width: 40%;
-            background: linear-gradient(to right, #4299E1, transparent);
-            color: white;
-            border-top-right-radius: 9999px;
-            border-bottom-right-radius: 9999px;
+            align-items: start;
+            width: 100%;
+            color: #F8F7F3;
             transition: all;
             transition-duration: 0.5s;
+            display: block;
+        }
 
-            h3 {
-                margin-left: 1.75rem;
-                font-size: 1.85rem;
-                line-height: 2.25rem;
-            }
+        .active-About {
+            height: 320px;
+        }
 
-            p {
-                width: auto;
-                height: 48px;
-                inset: 0.75rem;
-                margin-left: 1.75rem;
-            }
+        .no-active-About {
+            height: 148px;
+
+        }
+
+
+
+        h3 {
+            padding-top: 40px;
+            padding-left: 70px;
+            font-size: 55px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-left: 110px;
+            margin-top: 10px;
         }
     }
+
+
 
 
     .div-Services {
         @include rowJB;
         position: relative;
-        background: linear-gradient(to right, #00ff95, transparent);
-        width: 40%;
-        border-top-right-radius: 9999px;
-        border-bottom-right-radius: 9999px;
+        background: linear-gradient(90deg, #08FFB8 34.38%, rgba(8, 255, 184, 0.00) 100%);
+        width: 778px !important;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
         align-items: center;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+
+        a {
+            text-decoration: none
+        }
+
+        .element-Services {
+            @include rowJB;
+            align-items: start;
+            width: 80%;
+            color: black;
+            transition: all;
+            transition-duration: 0.5s;
+            display: block;
+        }
+
+        .active-Services {
+            height: 320px;
+        }
+
+        .no-active-Services {
+            height: 148px;
+
+        }
+
+
+        h3 {
+            padding-top: 40px;
+            padding-left: 70px;
+            font-size: 55px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-left: 110px;
+            margin-top: 10px;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .div-Services {
+        @include rowJB;
+        position: relative;
+        background: linear-gradient(90deg, #08FFB8 34.38%, rgba(8, 255, 184, 0.00) 100%);
+        width: 40%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        align-items: center;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+
+        a {
+            text-decoration: none
+        }
 
         .element-Service {
             @include rowJB;
-            align-items: center;
-            width: 100%;
+            align-items: start;
+            width: 80%;
             color: black;
             transition: all;
             transition-duration: 0.5s;
@@ -102,62 +223,30 @@
         }
 
         .active-Services {
-            display: flex;
-            flex-flow: column nowrap;
-            height: 200px;
+            height: 320px;
         }
 
         .no-Active-Services {
-            height: 80px;
+            height: 148px;
 
         }
 
-        .div-P-Service {
-            width: 80%;
-            height: 50px;
-            margin-left: 1.75rem;
+        .div-h3 {
+            display: block;
+
+            h3 {
+                padding-top: 40px;
+                padding-left: 70px;
+                font-size: 55px;
+            }
+
+            p {
+                font-size: 24px;
+                margin-left: 110px;
+                margin-top: 10px;
+            }
         }
-
-        h3 {
-
-            margin-left: 1.75rem;
-            font-size: 1.85rem;
-            line-height: 2.25rem;
-        }
     }
 
-    .button-Proyect {
-        position: relative;
-        width: 32px;
-        height: 32px;
-        background-color: transparent;
-        border: 2px solid rgb(255, 253, 253);
-        border-radius: 16px;
-        transition-property: transform;
-        transition-duration: 0.8s;
-    }
-
-    .button-Proyect.active-Button {
-        transform: rotate(90deg);
-    }
-
-    .button-Proyect .div-arrow {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .button-Proyect .div-arrow .div-1 {
-        width: 37%;
-        height: 2px;
-        background-color: rgb(255, 255, 255);
-    }
-
-    .button-Proyect .div-arrow .div-2 {
-        width: 8px;
-        height: 8px;
-        background-color: white;
-        transform: rotate(45deg);
-    }
 
 }
