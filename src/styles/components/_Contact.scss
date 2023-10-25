@@ -8,7 +8,7 @@
         justify-content: center;
 
         h2 {
-            font-size: 85px;
+            font-size: 48px;
             background-image: linear-gradient(to right, #08FFB8, #5799F7);
             -webkit-background-clip: text;
             background-clip: text;
@@ -16,7 +16,7 @@
             text-decoration: none;
             // margin: 0;
             // margin-top: 0px;
-            // margin-bottom: 34px;
+            margin-bottom: 34px;
         }
 
         p {
@@ -32,14 +32,14 @@
         color: #DADADA;
         width: 66.6667%;
         margin: 0 auto;
-        // margin-top: 50px;
+        margin-top: 50px;
 
         label {
             font-size: 18px;
         }
 
         input {
-            // margin-top: 10px;
+            margin-top: 10px;
             margin-bottom: 20px;
         }
     }
