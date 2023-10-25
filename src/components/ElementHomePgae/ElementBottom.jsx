@@ -41,7 +41,7 @@ const ElementBotton = () => {
 
 
             <div className='div-About'>
-                <Link to='/about'>
+                <Link to='/aboutUs'>
                     <div className={`element-About  
              ${isDropdownVisibleAbout ?
                             'active-About ' : 'no-active-About'}`} onMouseEnter={toggleDropdownAbout} onMouseLeave={toggleDropdownAbout}>

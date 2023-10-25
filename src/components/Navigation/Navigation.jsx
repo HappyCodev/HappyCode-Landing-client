@@ -22,7 +22,9 @@ const Navigation = () => {
                 <img src={logo} alt="HappyCode Logo" />
             </Link>
             <div className='contact-us-navi-button'>
-                <button className='' onClick={openModal}>Contact Us</button>
+                <div className='contact-us-navi-button-border'>
+                    <button className='' onClick={openModal}>Contact Us</button>
+                </div>
             </div>
             {isModalOpen && (
                 <div className='modal'>
