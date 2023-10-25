@@ -1,97 +1,97 @@
-//  @font-face {
-//      font-family: 'CabinetGrotesk-Bold';
-//      src: url('./../../assets/fonts/CabinetGrotesk-Bold.woff2') format('woff2'),
-//          url('./../../assets/fonts/CabinetGrotesk-Bold.woff') format('woff'),
-//          url('./../../assets/fonts/CabinetGrotesk-Bold.ttf') format('truetype');
-//      font-weight: 700;
-//      font-display: swap;
-//      font-style: normal;
-//  }
+ @font-face {
+     font-family: 'CabinetGrotesk-Bold';
+     src: url('./../../assets/fonts/CabinetGrotesk-Bold.woff2') format('woff2'),
+         url('./../../assets/fonts/CabinetGrotesk-Bold.woff') format('woff'),
+         url('./../../assets/fonts/CabinetGrotesk-Bold.ttf') format('truetype');
+     font-weight: 700;
+     font-display: swap;
+     font-style: normal;
+ }
 
-
-.ElementTop {
-    @include rowJB;
-
-
-
-
-    .home-Page-Intro {
-        width: 503px !important;
-        margin-left: 105px !important;
-        margin-top: 183px !important;
-
-        h1 {
-            background: linear-gradient(261deg, #5799F7 24.47%, #08FFB8 85.78%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: CabinetGrotesk-Bold, sans-serif;
-            font-size: 85px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 100%;
-            width: fit-content;
-        }
-
-        span {
-            letter-spacing: -6.375px;
-            font-weight: 800;
-        }
-
-        p {
-            color: #F8F7F3;
-            margin-top: 46px;
-            margin-bottom: 209px;
-            font-size: 35px;
-        }
-    }
-
-    .home-Page-Intro-Article {
-        @include columnJA;
-        background: rgba(30, 30, 30, 0.26);
-        align-items: center;
-        width: 705px;
-        height: fit-content;
-        box-shadow: -8px 4px 34px 0px rgba(0, 0, 0, 0.25);
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        margin-top: 143px;
+ .ElementTop {
+     @include rowJB;
 
 
 
 
-        article {
-            color: #F8F7F3;
-            font-family: Cabinet Grotesk;
-            font-size: 35px;
-            font-style: normal;
-            font-weight: 300;
-            width: 565px;
-            line-height: 140%;
-            margin-top: 46px;
-            margin-left: 70px;
-            margin-right: 29px;
-            margin-bottom: 35px;
-        }
+     .home-Page-Intro {
+         width: 503px !important;
+         margin-left: 105px !important;
+         margin-top: 183px !important;
+
+         h1 {
+             background: linear-gradient(261deg, #5799F7 24.47%, #08FFB8 85.78%);
+             background-clip: text;
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+             font-family: 'CabinetGrotesk-Thin';
+             font-size: 85px;
+             font-style: normal;
+             font-weight: 700;
+             line-height: 100%;
+             width: fit-content;
+             min-height: 181px
+         }
+
+         span {
+             letter-spacing: -6.375px;
+             font-weight: 800;
+         }
+
+         p {
+             color: #F8F7F3;
+             margin-top: 46px;
+             margin-bottom: 209px;
+             font-size: 35px;
+         }
+     }
+
+     .home-Page-Intro-Article {
+         @include columnJA;
+         background: rgba(30, 30, 30, 0.26);
+         align-items: center;
+         width: 705px;
+         height: fit-content;
+         box-shadow: -8px 4px 34px 0px rgba(0, 0, 0, 0.25);
+         border-top-left-radius: 50px;
+         border-bottom-left-radius: 50px;
+         margin-top: 143px;
 
 
-        .Home-Article-Button {
 
-            color: #2D2E2E;
-            font-family: Cabinet Grotesk, sans-serif;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 100%;
-            background-image: $buttonGradient;
-            border: none;
-            width: auto;
-            border-radius: 50px;
-            padding: 15px 25px;
-            margin-bottom: 46px;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-        }
+         article {
+             color: #F8F7F3;
+             font-family: Cabinet Grotesk;
+             font-size: 35px;
+             font-style: normal;
+             font-weight: 300;
+             width: 565px;
+             line-height: 140%;
+             margin-top: 46px;
+             margin-left: 70px;
+             margin-right: 29px;
+             margin-bottom: 35px;
+         }
 
-    }
-}
+
+         .Home-Article-Button {
+
+             color: #2D2E2E;
+             font-family: Cabinet Grotesk, sans-serif;
+             font-size: 24px;
+             font-style: normal;
+             font-weight: 700;
+             line-height: 100%;
+             background-image: $buttonGradient;
+             border: none;
+             width: auto;
+             border-radius: 50px;
+             padding: 15px 25px;
+             margin-bottom: 46px;
+             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+         }
+
+     }
+ }
