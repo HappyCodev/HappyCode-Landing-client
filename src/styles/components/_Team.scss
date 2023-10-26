@@ -1,0 +1,11 @@
+.Team {
+
+    margin-top: 10%;
+
+    h1 {
+        @include h2Style;
+        text-align: center;
+        font-size: 96px;
+    }
+
+}
