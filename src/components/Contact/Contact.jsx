@@ -1,17 +1,37 @@
 import { useForm, ValidationError } from '@formspree/react';
 import confirmIcon from './confirmIcon.svg'
-
+import { useEffect, useState } from 'react';
 const Contact = () => {
 
-    const [state, handleSubmit] = useForm("mzblyvwd");
+    const [state, handleSubmit] = useForm("xoqorpwp");
+    const [isDataFilled, setIsDataFilled] = useState(false)
 
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    })
+    useEffect(() => {
+        handleButtonActive();
+    }, [formData]);
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.currentTarget
+        setFormData({ ...formData, [name]: value })
+        handleButtonActive()
+    }
+
+    const handleButtonActive = () => {
+        console.log(state.errors, state.submitting)
+        formData.name.length && formData.email.length && formData.message.length ? setIsDataFilled(true) : setIsDataFilled(false)
+    }
     return (
 
         <div className='contact'>
             {!state.succeeded ?
                 <>
-                    <div class="contact-us-title">
-                        <div class="center-content">
+                    <div className="contact-us-title">
+                        <div className="center-content">
                             <h2>Contact us</h2>
                             <p>Thank you for reaching out to HappyCode!</p>
                             <p>Please complete the form below with details about your project.</p>
@@ -28,6 +48,8 @@ const Contact = () => {
                                 name="name"
                                 className='form-style'
                                 placeholder='Enter your full name...'
+                                value={formData.name}
+                                onChange={handleInputChange}
                             />
                             <ValidationError
                                 prefix="name"
@@ -44,6 +66,9 @@ const Contact = () => {
                                 className='form-style'
                                 placeholder='Enter your email...'
 
+                                value={formData.email}
+                                onChange={handleInputChange}
+
                             />
                             <ValidationError
                                 prefix="Email"
@@ -58,6 +83,8 @@ const Contact = () => {
                                 name="message"
                                 className='form-style form-text-area'
                                 placeholder="Enter your message..."
+                                value={formData.message}
+                                onChange={handleInputChange}
                             ></textarea>
 
                             <ValidationError
@@ -67,7 +94,7 @@ const Contact = () => {
                             />
                             <div className='contact-us-form-button'>
                                 <div className='contact-us-form-button-border'>
-                                    <button type="submit" disabled={state.submitting}>
+                                    <button type="submit" disabled={state.submitting | !isDataFilled}>
                                         Contact
                                     </button>
                                 </div>

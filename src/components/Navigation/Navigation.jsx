@@ -10,24 +10,13 @@ const Navigation = () => {
     const closeModal = () => {
         setIsModalOpen(false);
     };
-    function handleMouseEnter() {
-        const element = document.querySelector('.contact-us-navi-button');
-        if (element) {
-            element.classList.add('contact-us-navi-button-hover');
-        }
-    }
-    function handleMouseLeave() {
-        const element = document.querySelector('.contact-us-navi-button');
-        if (element) {
-            element.classList.remove('contact-us-navi-button-hover');
-        }
-    }
+
     return (
         <div className='Navigation' >
             <Link to={'/'}>
                 <img src={logo} alt="HappyCode Logo" />
             </Link>
-            <div className='contact-us-navi-button' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className='contact-us-navi-button'>
                 <div className='contact-us-navi-button-border'>
                     <button className='' onClick={openModal}>Contact Us</button>
                 </div>
