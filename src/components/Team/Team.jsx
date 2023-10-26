@@ -6,7 +6,7 @@ const Team = () => {
 
             <h1>Meet our team</h1>
 
-            <div className="membersRow">
+            <div className="membersRowTop">
 
                 <div className="memberCard">
                     <div className="alejandraMamblonaIMG" />
@@ -50,7 +50,7 @@ const Team = () => {
 
             </div>
 
-            <div className="membersRow">
+            <div className="membersRowBot">
 
                 <div className="memberCard">
                     <div className="alejandroRecheIMG" />

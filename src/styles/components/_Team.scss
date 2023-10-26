@@ -11,6 +11,12 @@
     margin: 5%;
 }
 
+@mixin membersRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
 .Team {
     margin-top: 10%;
     color: white;
@@ -23,18 +29,18 @@
         font-size: 6rem;
     }
 
-    .membersRow {
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
+    .membersRowTop {
+        @include membersRow()
+    }
+
+    .membersRowBot {
+        @include membersRow();
     }
 
     .memberCard {
         width: 15.6875rem;
         height: 27.4725rem;
         text-align: center;
-
-
 
         .memberName {
             font-size: 1.25rem;
@@ -74,22 +80,26 @@
 
     .alejandraMamblonaIMG {
         @include photo();
-        background-image: url("/src/assets/profile/mamblona.png")
+        background-image: url("/src/assets/profile/mamblona.png");
+        z-index: 1
     }
 
     .isabellaPaivaIMG {
         @include photo();
-        background-image: url("/src/assets/profile/paiva.png")
+        background-image: url("/src/assets/profile/paiva.png");
+        z-index: 2;
     }
 
     .ignacioSansonIMG {
         @include photo();
-        background-image: url("/src/assets/profile/sanson.png")
+        background-image: url("/src/assets/profile/sanson.png");
+        z-index: 3;
     }
 
     .carlosDelgadoIMG {
         @include photo();
-        background-image: url("/src/assets/profile/delgado.png")
+        background-image: url("/src/assets/profile/delgado.png");
+        z-index: 4;
     }
 
     .alejandroRecheIMG {
@@ -179,6 +189,8 @@
         border-radius: 3.125rem;
 
         button {
+            font-size: 24px;
+            font-weight: bold;
             -webkit-background-clip: border-box;
             background-clip: border-box;
             text-decoration: none;
