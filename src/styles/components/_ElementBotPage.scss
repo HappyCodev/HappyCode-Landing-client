@@ -4,6 +4,7 @@
     flex-flow: column nowrap;
     justify-content: end;
     margin-bottom: 81px;
+    font-family: 'CabinetGrotesk-Bold';
 
     .div-Projects {
         @include rowJB;
@@ -31,22 +32,30 @@
 
 
 
+
             h3 {
                 padding-top: 40px;
                 padding-left: 70px;
-                font-size: 55px;
+                font-size: 3.4375rem;
+                font-weight: 700;
+                line-height: normal;
             }
 
             span {
-                font-size: 30px;
                 margin-left: 28px;
-
+                font-size: 1.875rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
             }
 
             p {
-                font-size: 24px;
                 margin-left: 110px;
                 margin-top: 10px;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
             }
 
 
@@ -106,13 +115,18 @@
         h3 {
             padding-top: 40px;
             padding-left: 70px;
-            font-size: 55px;
+            font-size: 3.4375rem;
+            font-weight: 700;
+            line-height: normal;
         }
 
         p {
-            font-size: 24px;
             margin-left: 110px;
             margin-top: 10px;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
         }
     }
 
@@ -157,13 +171,18 @@
         h3 {
             padding-top: 40px;
             padding-left: 70px;
-            font-size: 55px;
+            font-size: 3.4375rem;
+            font-weight: 700;
+            line-height: normal;
         }
 
         p {
-            font-size: 24px;
             margin-left: 110px;
             margin-top: 10px;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
         }
 
     }
