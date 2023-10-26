@@ -66,9 +66,11 @@ const Contact = () => {
                                 errors={state.errors}
                             />
                             <div className='contact-us-form-button'>
-                                <button type="submit" disabled={state.submitting}>
-                                    Contact
-                                </button>
+                                <div className='contact-us-form-button-border'>
+                                    <button type="submit" disabled={state.submitting}>
+                                        Contact
+                                    </button>
+                                </div>
                             </div>
                         </form >
                     </div>
