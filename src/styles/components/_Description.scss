@@ -29,7 +29,7 @@ $ourDivColor: rgba(30, 30, 30, 0.56);
 }
 
 .Description {
-    font-family: 'CabinetGrotesk', sans-serif;
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
 }
 
 .WhoWeAre {
@@ -45,7 +45,18 @@ $ourDivColor: rgba(30, 30, 30, 0.56);
 
         h2 {
             font-size: 4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%
         }
+
+        p {
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%
+        }
+
     }
 
     .WhoWeAreImage {
