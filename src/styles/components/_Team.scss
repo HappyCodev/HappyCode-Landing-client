@@ -74,47 +74,124 @@
 
     .alejandraMamblonaIMG {
         @include photo();
-        background-image: url("/src/assets/whoweare.png")
+        background-image: url("/src/assets/profile/mamblona.png")
     }
 
     .isabellaPaivaIMG {
         @include photo();
-        background-image: url("/src/assets/whoweare.png")
+        background-image: url("/src/assets/profile/paiva.png")
     }
 
     .ignacioSansonIMG {
         @include photo();
-        background-image: url("/src/assets/whoweare.png")
+        background-image: url("/src/assets/profile/sanson.png")
     }
 
     .carlosDelgadoIMG {
         @include photo();
-        background-image: url("/src/assets/whoweare.png")
+        background-image: url("/src/assets/profile/delgado.png")
     }
 
     .alejandroRecheIMG {
         @include photo();
-        background-image: url("/src/assets/whoweare.png")
+        background-image: url("/src/assets/profile/reche.png")
     }
 
     .carlosAlbendizIMG {
         @include photo();
-        background-image: url("/src/assets/whoweare.png")
+        background-image: url("/src/assets/profile/albendiz.png")
     }
 
     .ireneBucetaIMG {
         @include photo();
-        background-image: url("/src/assets/whoweare.png")
+        background-image: url("/src/assets/profile/buceta.png")
     }
 
     .joanBenaigesIMG {
         @include photo();
-        background-image: url("/src/assets/whoweare.png")
+        background-image: url("/src/assets/profile/benaiges.png")
     }
 
     .rodrigoLopezIMG {
         @include photo();
-        background-image: url("/src/assets/whoweare.png")
+        background-image: url("/src/assets/profile/lopez.png")
     }
 
+}
+
+.lets-meet-form-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 40px;
+    text-align: center;
+
+    .lets-meet-form-button-border {
+        button {
+            color: #030303;
+            width: 95.66px;
+            height: 41.66px;
+            border-radius: 20px;
+            border: 0px;
+            background-image: linear-gradient(35deg, #5799F7, #08FFB8);
+            box-shadow: 0px 0px 16px #3687FA;
+        }
+    }
+}
+
+.lets-meet-form-button:hover {
+    background: linear-gradient(180deg, #08FFB8 13.4%, #5799F7 86.6%);
+    background-clip: content-box;
+    border-radius: 3.125rem;
+
+    .lets-meet-form-button-border {
+        border: 2px solid transparent;
+        background-clip: content-box;
+        background-color: #232424;
+        border-radius: 3.125rem;
+
+        button {
+            width: 91.66px;
+            height: 37.66px;
+            @include transparent_text;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+            background-image: linear-gradient(to bottom left, #08FFB8 13.4%, #5799F7 86.6%);
+            text-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+        }
+    }
+}
+
+.button-div {
+    padding: 5%;
+    padding-bottom: 10%;
+}
+
+.lets-meet-form-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    background: transparent;
+
+    .lets-meet-form-button-border {
+        border: 0px solid transparent;
+        background-color: transparent;
+        border-radius: 3.125rem;
+
+        button {
+            -webkit-background-clip: border-box;
+            background-clip: border-box;
+            text-decoration: none;
+            width: 167px;
+            height: 54px;
+            padding: 15px, 25px, 15px, 25px;
+            border-radius: 78.74px;
+            border: 0px;
+            color: #030303;
+            background-image: linear-gradient(35deg, #5799F7, #08FFB8);
+            mix-blend-mode: plus-lighter;
+            box-shadow: 0px 0px 16px #3687FA;
+        }
+
+    }
 }
