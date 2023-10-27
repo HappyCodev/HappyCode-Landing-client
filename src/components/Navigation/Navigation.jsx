@@ -16,7 +16,7 @@ const Navigation = () => {
             <Link to={'/'}>
                 <img src={logo} alt="HappyCode Logo" />
             </Link>
-            <div className='contact-us-navi-button'>
+            <div className={`contact-us-navi-button ${isModalOpen && 'modal-open'}`}>
                 <div className='contact-us-navi-button-border'>
                     <button className='' onClick={openModal}>Contact Us</button>
                 </div>

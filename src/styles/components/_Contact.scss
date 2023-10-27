@@ -22,8 +22,6 @@
         }
     }
 
-
-
     .contact-us-form-title {
         color: #DADADA;
         width: 66.6667%;
@@ -31,10 +29,29 @@
 
         label {
             font-size: 18px;
+            display: block;
+            margin-top: 20px;
         }
 
-        input {
-            margin-bottom: 20px;
+        .error {
+            color: rgba(197, 0, 0, 1);
+            font-size: 12.344px;
+            display: flex;
+            height: 11px;
+            align-items: center;
+            margin-top: 4px;
+
+            img {
+                height: 11px;
+                width: 11px;
+                margin-right: 5px;
+            }
+
+
+        }
+
+        .form-style.error-border {
+            border: 1.543px solid var(--Error, #C50000);
         }
 
         input:focus::placeholder {
@@ -45,8 +62,18 @@
             color: rgb(145, 145, 145)
         }
 
+
+
+        img {
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+        }
+
+
+
+
         .form-style {
-            margin-top: 6px;
             padding-top: 9px;
             padding-bottom: 9px;
             padding-left: 12px;
@@ -77,10 +104,11 @@
             margin-left: auto;
             margin-right: auto;
             width: fit-content;
-            margin-top: 40px;
+            margin-top: 20px;
             text-align: center;
 
             .contact-us-form-button-border {
+
                 button {
                     color: #030303;
                     width: 95.66px;
@@ -89,6 +117,14 @@
                     border: 0px;
                     background-image: linear-gradient(35deg, #5799F7, #08FFB8);
                     box-shadow: 0px 0px 16px #3687FA;
+                }
+
+                .contact-disabled-button {
+                    position: absolute;
+                    width: 95.66px;
+                    height: 41.66px;
+                    cursor: pointer;
+                    transform: translateY(-41.66px)
                 }
             }
         }
@@ -122,7 +158,6 @@
             text-align: center;
             background: transparent;
 
-
             .contact-us-form-button-border {
                 border: 0px solid transparent;
                 background-color: transparent;
@@ -145,10 +180,7 @@
         }
 
         .contact-us-form-button {
-
-
             .contact-us-form-button-border {
-
                 button:disabled {
                     -webkit-background-clip: border-box;
                     background-clip: border-box;
@@ -169,14 +201,11 @@
 
     }
 
-
-
-
     .contact-us-succeeded {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70vh; //eliminar
+        padding-top: 13.0625rem;
 
         h2 {
             color: #F8F7F3

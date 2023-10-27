@@ -1,10 +1,13 @@
 import { useForm, ValidationError } from '@formspree/react';
 import confirmIcon from './confirmIcon.svg'
+import errorIcon from './errorIcon.svg'
+
 import { useEffect, useState } from 'react';
 const Contact = () => {
 
     const [state, handleSubmit] = useForm("xoqorpwp");
     const [isDataFilled, setIsDataFilled] = useState(false)
+    const [contactPressed, setContactPressed] = useState(false)
 
     const [formData, setFormData] = useState({
         name: '',
@@ -18,13 +21,14 @@ const Contact = () => {
     const handleInputChange = (e) => {
         const { name, value } = e.currentTarget
         setFormData({ ...formData, [name]: value })
+        setContactPressed(false)
         handleButtonActive()
-    }
 
+    }
     const handleButtonActive = () => {
-        console.log(state.errors, state.submitting)
         formData.name.length && formData.email.length && formData.message.length ? setIsDataFilled(true) : setIsDataFilled(false)
     }
+
     return (
 
         <div className='contact'>
@@ -38,7 +42,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='contact-us-form-title'>
-                        < form onSubmit={handleSubmit} >
+                        <form onSubmit={handleSubmit} noValidate>
                             <label htmlFor="name">
                                 Full name*
                             </label>
@@ -46,16 +50,15 @@ const Contact = () => {
                                 id="name"
                                 type="name"
                                 name="name"
-                                className='form-style'
+                                className={`form-style ${contactPressed && !formData.name.length ? 'error-border' : ''}`}
                                 placeholder='Enter your full name...'
                                 value={formData.name}
                                 onChange={handleInputChange}
                             />
-                            <ValidationError
-                                prefix="name"
-                                field="name"
-                                errors={state.errors}
-                            />
+                            <div className='error'>
+                                {contactPressed && !formData.name.length ? <> <img src={errorIcon} alt="" /> This text input is required</> : ''}
+                            </div>
+
                             <label htmlFor="email">
                                 Email*
                             </label>
@@ -63,40 +66,48 @@ const Contact = () => {
                                 id="email"
                                 type="email"
                                 name="email"
-                                className='form-style'
+                                className={`form-style ${contactPressed && !formData.email.length ? 'error-border' : ''}`}
                                 placeholder='Enter your email...'
-
                                 value={formData.email}
                                 onChange={handleInputChange}
+                            />
+                            <div className='error'>
+                                {formData.email.length ?
+                                    <>
+                                        {state.errors && <> <img src={errorIcon} alt="" /> Please enter a correct Email</>}
 
-                            />
-                            <ValidationError
-                                prefix="Email"
-                                field="email"
-                                errors={state.errors}
-                            />
+                                    </>
+                                    :
+                                    ''}
+                                {contactPressed && !formData.email.length ? <> <img src={errorIcon} alt="" /> This text input is required</> : ''}
+                            </div>
+
                             <label htmlFor="message">
                                 Message*
                             </label>
                             <textarea
                                 id="message"
                                 name="message"
-                                className='form-style form-text-area'
+                                className={`form-style form-text-area ${contactPressed && !formData.message.length ? 'error-border' : ''}`}
                                 placeholder="Enter your message..."
                                 value={formData.message}
                                 onChange={handleInputChange}
                             ></textarea>
+                            <div className='error'>
+                                {contactPressed && !formData.message.length ? <> <img src={errorIcon} alt="" /> This text input is required</> : ''}
+                            </div>
 
-                            <ValidationError
-                                prefix="Message"
-                                field="message"
-                                errors={state.errors}
-                            />
-                            <div className='contact-us-form-button'>
-                                <div className='contact-us-form-button-border'>
-                                    <button type="submit" disabled={state.submitting | !isDataFilled}>
+                            <div className='contact-us-form-button' >
+                                <div className='contact-us-form-button-border' >
+                                    <button
+                                        type="submit"
+                                        disabled={state.submitting || !isDataFilled}
+                                    >
                                         Contact
                                     </button>
+                                    <div className={`${!isDataFilled && 'contact-disabled-button'}`}
+                                        onClick={() => setContactPressed(true)}
+                                    />
                                 </div>
                             </div>
                         </form >
@@ -111,7 +122,7 @@ const Contact = () => {
                     </div>
                 </div>
             }
-        </div>
+        </div >
     )
 }
 export default Contact
