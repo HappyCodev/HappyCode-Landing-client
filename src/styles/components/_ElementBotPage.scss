@@ -44,28 +44,52 @@
 
     .projects {
         background: linear-gradient(90deg, #38369A 27.6%, rgba(56, 54, 154, 0.00) 100%);
+
+        &:hover {
+            height: 320px;
+
+            p {
+                opacity: 1;
+                transition: opacity 0.6s;
+            }
+        }
+
+        &:active {
+            mix-blend-mode: plus-lighter;
+        }
     }
 
     .about-us {
         background: linear-gradient(90deg, #5799F7 18.75%, rgba(87, 153, 247, 0.00) 100%);
+
+        &:hover {
+            height: 320px;
+
+            p {
+                opacity: 1;
+                transition: opacity 0.6s;
+            }
+        }
+
+        &:active {
+            mix-blend-mode: plus-lighter;
+        }
     }
 
     .services {
         background: linear-gradient(90deg, #08FFB8 34.38%, rgba(8, 255, 184, 0.00) 100%);
+
+        &:hover {
+            height: 320px;
+
+            p {
+                opacity: 1;
+                transition: opacity 0.6s;
+            }
+        }
+
+        &:active {
+            mix-blend-mode: plus-lighter;
+        }
     }
-
-    .projects:hover,
-    .services:hover,
-    .about-us:hover {
-        height: 320px;
-    }
-
-    .projects:hover p,
-    .services:hover p,
-    .about-us:hover p {
-        opacity: 1;
-        transition: opacity 0.6s;
-    }
-
-
 }

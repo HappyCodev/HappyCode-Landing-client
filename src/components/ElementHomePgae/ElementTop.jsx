@@ -26,9 +26,16 @@ const ElementTop = () => {
                     we've got your back.
 
                 </article>
-                <button className='Home-Article-Button'>
-                    Let's get digital!
-                </button>
+
+
+                <div className='article-button'>
+                    <div className='article-button-border'>
+                        <button >Let's get digital!</button>
+                    </div>
+                </div>
+
+
+
             </div>
 
 

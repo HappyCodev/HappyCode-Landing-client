@@ -41,8 +41,8 @@
          @include columnJA;
          background: rgba(30, 30, 30, 0.26);
          align-items: center;
-         width: 705px;
-         height: fit-content;
+         width: 664px;
+         height: 377px;
          box-shadow: -8px 4px 34px 0px rgba(0, 0, 0, 0.25);
          border-top-left-radius: 50px;
          border-bottom-left-radius: 50px;
@@ -66,23 +66,91 @@
          }
 
 
-         .Home-Article-Button {
-
-             color: #2D2E2E;
-             font-family: 'CabinetGrotesk-Bold', sans-serif;
-             font-size: 24px;
-             font-style: normal;
+         .article-button {
+             width: fit-content;
+             height: fit-content;
+             background-clip: content-box;
+             border-radius: 3.125rem;
+             font-family: 'CabinetGrotesk-Bold';
              font-weight: 700;
              line-height: 100%;
-             background-image: $buttonGradient;
-             border: none;
-             width: auto;
-             border-radius: 50px;
-             padding: 15px 25px;
-             margin-bottom: 46px;
+             background: linear-gradient(180deg, #08FFB8 13.4%, #5799F7 86.6%);
              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+             margin-bottom: 46px;
 
+             &:hover {
+                 width: fit-content;
+                 height: fit-content;
+                 background: linear-gradient(180deg, #08FFB8 13.4%, #5799F7 86.6%);
+                 background-clip: content-box;
+                 border-radius: 3.125rem;
+                 font-family: 'CabinetGrotesk-Bold';
+                 font-weight: 700;
+                 line-height: 100%;
+             }
+
+             &:active {
+                 background: transparent;
+             }
+
+             .article-button-border {
+                 background-clip: content-box;
+                 border-radius: 3.125rem;
+                 border: 0px solid transparent;
+                 background-color: transparent;
+
+                 &:hover {
+                     border: 2px solid transparent;
+                     background-clip: content-box;
+                     background-color: #646464;
+                     border-radius: 3.125rem;
+
+                 }
+
+                 &:active {
+                     border: 0px solid transparent;
+                 }
+
+                 button {
+                     @include transparent_text;
+                     display: flex;
+                     padding: 0.9375rem 1.5625rem;
+                     justify-content: center;
+                     align-items: center;
+                     border-radius: 3.125rem;
+                     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                     background-color: transparent;
+                     background-image: linear-gradient(to bottom left, #08FFB8 13.4%, #5799F7 86.6%);
+                     font-weight: bold;
+
+                     color: #030303;
+                     font-size: 24px;
+                     border: 4px solid transparent;
+
+                     &:hover {
+                         @include transparent_text;
+                         display: flex;
+                         font-size: 24px;
+                         padding: 0.9375rem 1.5625rem;
+                         justify-content: center;
+                         align-items: center;
+                         border-radius: 3.125rem;
+                         border: 2px solid transparent;
+                         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                         background-color: transparent;
+                         background-image: linear-gradient(to bottom left, #08FFB8 13.4%, #5799F7 86.6%);
+                         font-weight: bold;
+                     }
+
+                     &:active {
+                         -webkit-background-clip: border-box;
+                         background-clip: border-box;
+                         color: #030303;
+                         border: 4px solid transparent;
+                         background: var(--Light-Blue, #5699F7);
+                     }
+                 }
+             }
          }
-
      }
  }
