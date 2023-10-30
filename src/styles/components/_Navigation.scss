@@ -103,6 +103,7 @@
             width: 47.25rem;
             height: 43.0625rem;
             border: none;
+            border-radius: 40px;
 
             h2 {
                 text-align: center;
@@ -116,8 +117,7 @@
             flex-shrink: 0;
             cursor: pointer;
             border-radius: 50%;
-            margin-left: 96%;
-
+            transform: translateY(15px) translateX(-15px);
         }
     }
 

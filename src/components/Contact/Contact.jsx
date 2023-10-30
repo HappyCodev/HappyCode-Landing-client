@@ -35,11 +35,9 @@ const Contact = () => {
             {!state.succeeded ?
                 <>
                     <div className="contact-us-title">
-                        <div className="center-content">
-                            <h2>Contact us</h2>
-                            <p>Thank you for reaching out to HappyCode!</p>
-                            <p>Please complete the form below with details about your project.</p>
-                        </div>
+                        <h2>Contact us</h2>
+                        <p>Thank you for reaching out to HappyCode!</p>
+                        <p>Please complete the form below with details about your project.</p>
                     </div>
                     <div className='contact-us-form-title'>
                         <form onSubmit={handleSubmit} noValidate>
@@ -66,7 +64,7 @@ const Contact = () => {
                                 id="email"
                                 type="email"
                                 name="email"
-                                className={`form-style ${contactPressed && !formData.email.length ? 'error-border' : ''}`}
+                                className={`form-style ${contactPressed && !formData.email.length || state.errors ? 'error-border' : ''}`}
                                 placeholder='Enter your email...'
                                 value={formData.email}
                                 onChange={handleInputChange}
@@ -74,7 +72,7 @@ const Contact = () => {
                             <div className='error'>
                                 {formData.email.length ?
                                     <>
-                                        {state.errors && <> <img src={errorIcon} alt="" /> Please enter a correct Email</>}
+                                        {state.errors && <> <img src={errorIcon} alt="" /> Invalid email adress</>}
 
                                     </>
                                     :
@@ -115,11 +113,9 @@ const Contact = () => {
                 </>
                 :
                 <div className='contact-us-succeeded'>
-                    <div className='center-content'>
-                        <h2>Thank you for contact  to HappyCode!</h2>
-                        <h2>Our team will get back to you soon!</h2>
-                        <img src={confirmIcon} alt="" />
-                    </div>
+                    <h2>Thank you for contact  to HappyCode!</h2>
+                    <h2>Our team will get back to you soon!</h2>
+                    <img src={confirmIcon} alt="" />
                 </div>
             }
         </div >
