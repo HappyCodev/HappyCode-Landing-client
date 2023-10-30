@@ -108,10 +108,8 @@ const Team = () => {
 
                 <div className='lets-meet-form-button'>
                     <div className='lets-meet-form-button-border'>
-                        <button className='' type="submit"
-                        //disabled={state.submitting}
-                        >
-                            Let's meet!
+                        <button className='' type="submit">
+                            Let&rsquo;s meet!
                         </button>
                     </div>
                 </div>
