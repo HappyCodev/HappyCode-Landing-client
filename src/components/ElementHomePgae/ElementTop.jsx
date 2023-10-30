@@ -18,7 +18,7 @@ const ElementTop = () => {
             </div>
 
             <div className="home-Page-Intro-Article" >
-                <article className='Home-Article'>
+                <article>
 
                     Whether you're an individual looking for a
                     personal page or a small to mid-sized
