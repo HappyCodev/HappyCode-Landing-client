@@ -1,0 +1,19 @@
+// BASE
+
+@import './base/base';
+@import './base/typography';
+
+// COMPONENTS
+
+@import './components/Navigation';
+@import './components/Contact';
+@import './components/Description';
+@import './components/Footer';
+@import './components/Team';
+@import './components/ElementTopPage';
+@import './components/ElementBotPage';
+
+// PAGES
+
+@import './pages/HomePage';
+@import './pages/AboutUsPage';

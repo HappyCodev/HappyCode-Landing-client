@@ -1,0 +1,125 @@
+.Navigation {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.0625rem 4.5625rem 1.875rem 4rem;
+
+    img {
+        width: 17.375rem;
+        height: 2.699rem;
+    }
+
+    .contact-us-navi-button {
+        width: fit-content;
+        height: fit-content;
+        background: linear-gradient(180deg, #08FFB8 13.4%, #5799F7 86.6%);
+        background-clip: content-box;
+        border-radius: 3.125rem;
+        font-family: 'CabinetGrotesk-Bold';
+        font-weight: 700;
+        line-height: 100%;
+
+        .contact-us-navi-button-border {
+            border: 2px solid transparent;
+            background-clip: content-box;
+            background-color: #646464;
+            border-radius: 3.125rem;
+
+            button {
+                @include transparent_text;
+                display: flex;
+                font-size: 24px;
+                padding: 0.9375rem 1.5625rem;
+                justify-content: center;
+                align-items: center;
+                border-radius: 3.125rem;
+                border: 2px solid transparent;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                background-color: transparent;
+                background-image: linear-gradient(to bottom left, #08FFB8 13.4%, #5799F7 86.6%);
+                font-weight: bold;
+            }
+        }
+    }
+
+    .contact-us-navi-button:hover {
+        background: linear-gradient(180deg, #08FFB8 13.4%, #5799F7 86.6%);
+
+
+        .contact-us-navi-button-border {
+            border: 0px solid transparent;
+            background-color: transparent;
+
+            button {
+                color: black;
+                font-size: 24px;
+                border: 4px solid transparent;
+            }
+        }
+    }
+
+    .contact-us-navi-button:active {
+        background: transparent;
+
+        .contact-us-navi-button-border {
+            button {
+                -webkit-background-clip: border-box;
+                background-clip: border-box;
+                color: #030303;
+                background: var(--Light-Blue, #5699F7);
+            }
+        }
+    }
+
+    .contact-us-navi-button.modal-open {
+        background: transparent;
+
+        .contact-us-navi-button-border {
+            button {
+                -webkit-background-clip: border-box;
+                background-clip: border-box;
+                color: #030303;
+                mix-blend-mode: plus-lighter;
+            }
+        }
+    }
+
+    .modal {
+        display: block;
+        position: fixed;
+        z-index: 20;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+
+
+        .modal-content {
+            background-color: #232424;
+            margin: 3% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 47.25rem;
+            height: 43.0625rem;
+            border: none;
+            border-radius: 40px;
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        .close {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-shrink: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            transform: translateY(15px) translateX(-15px);
+        }
+    }
+
+
+}

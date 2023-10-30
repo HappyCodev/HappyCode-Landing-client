@@ -1,0 +1,218 @@
+@mixin photo {
+    height: 16.6875rem;
+    width: 15.6875rem;
+    border: 0.75rem solid #292A2A;
+    border-radius: 50%;
+}
+
+@mixin logosStyle {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5%;
+}
+
+@mixin membersRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.Team {
+    margin-top: 10%;
+    color: white;
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
+
+
+    h1 {
+        @include h2Style;
+        text-align: center;
+        font-size: 6rem;
+    }
+
+    .membersRowTop {
+        @include membersRow()
+    }
+
+    .membersRowBot {
+        @include membersRow();
+        font-family: 'CabinetGrotesk-Bold', sans-serif;
+    }
+
+    .memberCard {
+        width: 15.6875rem;
+        height: 27.4725rem;
+        text-align: center;
+
+        .memberName {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.75rem;
+            margin-top: 12%;
+        }
+
+        .memberOccupation {
+            font-size: 0.9375rem;
+            font-family: 'CabinetGrotesk-Light', sans-serif;
+            line-height: 1.3125rem;
+            margin-top: 12%;
+        }
+
+        .memberContact {
+            margin-top: 12%;
+            margin-bottom: 0%;
+            display: flex;
+            justify-content: center;
+
+            .linkedInLogo {
+                background-image: url("/src/assets/icon/linkedin.svg");
+                @include logosStyle();
+                width: 15px;
+                height: 13px;
+            }
+
+            .emailLogo {
+                background-image: url("/src/assets/icon/mail.svg");
+                @include logosStyle();
+                width: 14px;
+                height: 11px;
+            }
+        }
+    }
+
+    .alejandraMamblonaIMG {
+        @include photo();
+        background-image: url("/src/assets/profile/mamblona.png");
+        z-index: 1
+    }
+
+    .isabellaPaivaIMG {
+        @include photo();
+        background-image: url("/src/assets/profile/paiva.png");
+        z-index: 2;
+    }
+
+    .ignacioSansonIMG {
+        @include photo();
+        background-image: url("/src/assets/profile/sanson.png");
+        z-index: 3;
+    }
+
+    .carlosDelgadoIMG {
+        @include photo();
+        background-image: url("/src/assets/profile/delgado.png");
+        z-index: 4;
+    }
+
+    .alejandroRecheIMG {
+        @include photo();
+        background-image: url("/src/assets/profile/reche.png")
+    }
+
+    .carlosAlbendizIMG {
+        @include photo();
+        background-image: url("/src/assets/profile/albendiz.png")
+    }
+
+    .ireneBucetaIMG {
+        @include photo();
+        background-image: url("/src/assets/profile/buceta.png")
+    }
+
+    .joanBenaigesIMG {
+        @include photo();
+        background-image: url("/src/assets/profile/benaiges.png")
+    }
+
+    .rodrigoLopezIMG {
+        @include photo();
+        background-image: url("/src/assets/profile/lopez.png")
+    }
+
+}
+
+.lets-meet-form-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 40px;
+    text-align: center;
+
+    .lets-meet-form-button-border {
+
+        button {
+            color: #030303;
+            width: 95.66px;
+            height: 41.66px;
+            border-radius: 20px;
+            border: 0px;
+            background-image: linear-gradient(35deg, #5799F7, #08FFB8);
+            box-shadow: 0px 0px 16px #3687FA;
+        }
+    }
+}
+
+.lets-meet-form-button:hover {
+    background: linear-gradient(180deg, #08FFB8 13.4%, #5799F7 86.6%);
+    background-clip: content-box;
+    border-radius: 3.125rem;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    .lets-meet-form-button-border {
+        border: 2px solid transparent;
+        background-clip: content-box;
+        background-color: #232424;
+        width: fit-content;
+        border-radius: 3.125rem;
+
+
+        button {
+            width: 160.66px;
+            height: 50.66px;
+            @include transparent_text;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+            background-image: linear-gradient(to bottom left, #08FFB8 13.4%, #5799F7 86.6%);
+            text-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+        }
+    }
+}
+
+.button-div {
+    padding: 5%;
+    padding-bottom: 10%;
+}
+
+.lets-meet-form-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    background: transparent;
+
+    .lets-meet-form-button-border {
+        border: 0px solid transparent;
+        background-color: transparent;
+        border-radius: 3.125rem;
+
+        button {
+            font-size: 24px;
+            font-weight: bold;
+            -webkit-background-clip: border-box;
+            background-clip: border-box;
+            text-decoration: none;
+            width: 167px;
+            height: 54px;
+            padding: 15px, 25px, 15px, 25px;
+            border-radius: 78.74px;
+            border: 0px;
+            color: #030303;
+            background-image: linear-gradient(35deg, #5799F7, #08FFB8);
+            mix-blend-mode: plus-lighter;
+            box-shadow: 0px 0px 16px #3687FA;
+        }
+
+    }
+}
