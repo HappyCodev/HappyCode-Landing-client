@@ -8,32 +8,38 @@
          width: 503px !important;
          margin-left: 105px !important;
          margin-top: 183px !important;
+         font-family: 'CabinetGrotesk-Regular', sans-serif;
 
          h1 {
              background: linear-gradient(261deg, #5799F7 24.47%, #08FFB8 85.78%);
              background-clip: text;
              -webkit-background-clip: text;
              -webkit-text-fill-color: transparent;
-             font-family: 'CabinetGrotesk-Bold';
-             font-size: 85px;
+
+             font-size: 5.3125rem;
              font-style: normal;
              font-weight: 700;
+
              line-height: 100%;
              width: fit-content;
-             min-height: 181px
+             min-height: 181px;
+
+             span {
+                 letter-spacing: -0.39844rem;
+                 font-weight: 800;
+                 font-family: 'CabinetGrotesk-Bold', sans-serif;
+             }
          }
 
-         span {
-             letter-spacing: -6.375px;
-             font-weight: 800;
-         }
+
 
          p {
              color: #F8F7F3;
+             font-family: 'CabinetGrotesk-Thin', sans-serif;
              margin-top: 46px;
              margin-bottom: 209px;
-             font-size: 35px;
-             font-weight: 300
+             font-size: 2.1875rem;
+             font-weight: 300;
          }
      }
 
@@ -53,7 +59,8 @@
 
          article {
              color: #F8F7F3;
-             font-family: 'CabinetGrotesk-Bold';
+             font-size: 2.1875rem;
+             font-family: 'CabinetGrotesk-Thin', sans-serif;
              font-size: 35px;
              font-style: normal;
              font-weight: 300;

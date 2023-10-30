@@ -12,6 +12,8 @@ $ourDivColor: rgba(30, 30, 30, 0.56);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'CabinetGrotesk-Regular';
+    font-size: 1.5rem;
     display: flex;
     width: 70%;
 }
@@ -19,6 +21,8 @@ $ourDivColor: rgba(30, 30, 30, 0.56);
 @mixin h2Style {
     @include transparent_text;
     background-image: $aboutUs_gradient;
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
+    font-size: 6rem;
 }
 
 @mixin parragraphStyle {
@@ -46,14 +50,12 @@ $ourDivColor: rgba(30, 30, 30, 0.56);
         h2 {
             font-size: 4rem;
             font-style: normal;
-            font-weight: 700;
             line-height: 140%
         }
 
         p {
             font-size: 1.5rem;
-            font-style: normal;
-            font-weight: 400;
+            font-family: 'CabinetGrotesk-Regular';
             line-height: 140%
         }
 

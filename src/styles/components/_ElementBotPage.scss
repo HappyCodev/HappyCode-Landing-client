@@ -1,6 +1,6 @@
 .element-bottom {
     margin-bottom: 81px;
-    font-family: 'CabinetGrotesk-Bold';
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
 
     .dropdown {
         @include rowJB;
@@ -25,7 +25,7 @@
         h3 {
             padding-top: 40px;
             padding-left: 70px;
-            font-size: 55px;
+            font-size: 3.4375rem;
 
             span {
                 font-size: 1.875rem;
@@ -34,7 +34,10 @@
         }
 
         p {
-            font-size: 24px;
+
+            font-family: 'CabinetGrotesk-Regular', sans-serif;
+            font-size: 1.5rem;
+            max-width: 75%;
             margin-left: 110px;
             margin-top: 10px;
             transition: opacity 0.6s;
