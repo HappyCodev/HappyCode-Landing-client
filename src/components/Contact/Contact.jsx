@@ -95,11 +95,11 @@ const Contact = () => {
                                 {contactPressed && !formData.message.length ? <> <img src={errorIcon} alt="" /> This text input is required</> : ''}
                             </div>
 
-                            <div className='contact-us-form-button' >
+                            <div className={`contact-us-form-button ${state.submitting ? 'pressed' : ''}`} >
                                 <div className='contact-us-form-button-border' >
                                     <button
                                         type="submit"
-                                        disabled={state.submitting || !isDataFilled}
+                                        disabled={!isDataFilled}
                                     >
                                         Contact
                                     </button>
