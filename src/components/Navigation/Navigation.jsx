@@ -1,15 +1,14 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import logo from './../../assets/images/LOGO 2.png'
 import { Link } from 'react-router-dom';
 import Contact from '../Contact/Contact';
+import { ContactContext } from '../../contexts/contact.context';
+
 const Navigation = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const openModal = () => {
-        setIsModalOpen(true);
-    };
-    const closeModal = () => {
-        setIsModalOpen(false);
-    };
+
+    const { isModalOpen, openModal, closeModal } = useContext(ContactContext)
+
+
 
     return (
         <div className='Navigation' >

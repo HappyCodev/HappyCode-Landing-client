@@ -1,6 +1,12 @@
+import { useContext } from "react"
+import { ContactContext } from "../../contexts/contact.context"
+
 
 
 const ElementTop = () => {
+
+    const { isModalOpen, openModal, closeModal } = useContext(ContactContext)
+
     return (
         <div className="ElementTop">
 
@@ -30,7 +36,7 @@ const ElementTop = () => {
 
                 <div className='article-button'>
                     <div className='article-button-border'>
-                        <button >Let's get digital!</button>
+                        <button onClick={openModal} >Let's get digital!</button>
                     </div>
                 </div>
 
