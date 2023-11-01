@@ -1,4 +1,10 @@
+import { useContext } from "react"
+import { ContactContext } from "../../contexts/contact.context"
+
 const Team = () => {
+
+    const { isModalOpen, openModal, closeModal } = useContext(ContactContext)
+
 
     return (
 
@@ -108,7 +114,7 @@ const Team = () => {
 
                 <div className='lets-meet-form-button'>
                     <div className='lets-meet-form-button-border'>
-                        <button className='' type="submit">
+                        <button className='' onClick={openModal} type="submit">
                             Let&rsquo;s meet!
                         </button>
                     </div>
