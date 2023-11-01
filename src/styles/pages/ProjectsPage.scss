@@ -1,0 +1,15 @@
+.ComingSoonImage {
+    background-image: url("/src/assets/ComingSoonImage.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 519px;
+    width: 560px;
+    position: relative;
+}
+
+.ProjectsPage {
+    display: grid;
+    place-items: center; // Centers both horizontally and vertically
+    height: 100vh; // Takes up the full viewport height
+}
