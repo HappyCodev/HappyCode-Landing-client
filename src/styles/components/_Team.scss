@@ -17,6 +17,13 @@
     margin-top: 5%;
 }
 
+@mixin memberCard {
+    width: 15.6875rem;
+    height: 27.4725rem;
+    text-align: center;
+    left: -5%;
+}
+
 .Team {
     margin-top: 10%;
     color: white;
@@ -37,97 +44,142 @@
         @include membersRow();
     }
 
-    .memberCard {
-        width: 15.6875rem;
-        height: 27.4725rem;
-        text-align: center;
+    .memberName {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        margin-top: 12%;
+    }
 
-        .memberName {
-            font-size: 1.25rem;
-            font-weight: 700;
-            line-height: 1.75rem;
-            margin-top: 12%;
+    .memberOccupation {
+        font-size: 0.9375rem;
+        font-weight: 300;
+        line-height: 1.3125rem;
+        margin-top: 12%;
+    }
+
+    .memberContact {
+        margin-top: 12%;
+        margin-bottom: 0%;
+        display: flex;
+        justify-content: center;
+
+        .linkedInLogo {
+            background-image: url("/src/assets/icon/linkedin.svg");
+            @include logosStyle();
+            width: 15px;
+            height: 13px;
         }
 
-        .memberOccupation {
-            font-size: 0.9375rem;
-            font-weight: 300;
-            line-height: 1.3125rem;
-            margin-top: 12%;
-        }
-
-        .memberContact {
-            margin-top: 12%;
-            margin-bottom: 0%;
-            display: flex;
-            justify-content: center;
-
-            .linkedInLogo {
-                background-image: url("/src/assets/icon/linkedin.svg");
-                @include logosStyle();
-                width: 15px;
-                height: 13px;
-            }
-
-            .emailLogo {
-                background-image: url("/src/assets/icon/mail.svg");
-                @include logosStyle();
-                width: 14px;
-                height: 11px;
-            }
+        .emailLogo {
+            background-image: url("/src/assets/icon/mail.svg");
+            @include logosStyle();
+            width: 14px;
+            height: 11px;
         }
     }
+}
+
+.memberCardMamblona {
+
+    @include memberCard();
+    z-index: 1;
 
     .alejandraMamblonaIMG {
         @include photo();
         background-image: url("/src/assets/profile/mamblona.png");
-        z-index: 1
     }
+}
+
+.memberCardPaiva {
+
+    @include memberCard();
+    z-index: 2;
 
     .isabellaPaivaIMG {
         @include photo();
         background-image: url("/src/assets/profile/paiva.png");
-        z-index: 2;
     }
+}
+
+.memberCardSanson {
+
+    @include memberCard();
+    z-index: 3;
 
     .ignacioSansonIMG {
         @include photo();
         background-image: url("/src/assets/profile/sanson.png");
-        z-index: 3;
     }
+}
+
+.memberCardDelgado {
+
+    @include memberCard();
+    z-index: 4;
 
     .carlosDelgadoIMG {
         @include photo();
         background-image: url("/src/assets/profile/delgado.png");
-        z-index: 4;
     }
+}
+
+.memberCardReche {
+
+    @include memberCard();
+    z-index: 1;
 
     .alejandroRecheIMG {
         @include photo();
         background-image: url("/src/assets/profile/reche.png")
     }
+}
+
+.memberCardAlbendiz {
+
+    @include memberCard();
+    z-index: 2;
 
     .carlosAlbendizIMG {
         @include photo();
         background-image: url("/src/assets/profile/albendiz.png")
     }
+}
+
+.memberCardBuceta {
+
+    @include memberCard();
+    z-index: 3;
 
     .ireneBucetaIMG {
         @include photo();
         background-image: url("/src/assets/profile/buceta.png")
     }
+}
+
+.memberCardBenaiges {
+    z-index: 4;
+
+    @include memberCard();
 
     .joanBenaigesIMG {
         @include photo();
         background-image: url("/src/assets/profile/benaiges.png")
     }
+}
+
+.memberCardLopez {
+
+    @include memberCard();
+    z-index: 5;
 
     .rodrigoLopezIMG {
         @include photo();
         background-image: url("/src/assets/profile/lopez.png")
     }
-
 }
+
+
 
 .lets-meet-form-button {
     margin-left: auto;

@@ -8,7 +8,7 @@ const Team = () => {
 
             <div className="membersRowTop">
 
-                <div className="memberCard">
+                <div className="memberCardMamblona">
                     <div className="alejandraMamblonaIMG" />
                     <p className="memberName">Alejandra Mamblona</p>
                     <p className="memberOccupation">UX/UI Designer</p>
@@ -18,7 +18,7 @@ const Team = () => {
                     </p>
                 </div>
 
-                <div className="memberCard">
+                <div className="memberCardPaiva">
                     <div className="isabellaPaivaIMG" />
                     <p className="memberName">Isabella Paiva</p>
                     <p className="memberOccupation">Product Manager</p>
@@ -28,7 +28,7 @@ const Team = () => {
                     </p>
                 </div>
 
-                <div className="memberCard">
+                <div className="memberCardSanson">
                     <div className="ignacioSansonIMG" />
                     <p className="memberName">Ignacio Sansón</p>
                     <p className="memberOccupation">Lead Full Stack</p>
@@ -38,7 +38,7 @@ const Team = () => {
                     </p>
                 </div>
 
-                <div className="memberCard">
+                <div className="memberCardDelgado">
                     <div className="carlosDelgadoIMG" />
                     <p className="memberName">Carlos Delgado</p>
                     <p className="memberOccupation">Front-end Manager</p>
@@ -52,7 +52,7 @@ const Team = () => {
 
             <div className="membersRowBot">
 
-                <div className="memberCard">
+                <div className="memberCardReche">
                     <div className="alejandroRecheIMG" />
                     <p className="memberName">Alejandro Reche</p>
                     <p className="memberOccupation">Back-end developer</p>
@@ -62,7 +62,7 @@ const Team = () => {
                     </p>
                 </div>
 
-                <div className="memberCard">
+                <div className="memberCardAlbendiz">
                     <div className="carlosAlbendizIMG" />
                     <p className="memberName">Carlos Albéndiz</p>
                     <p className="memberOccupation">Front-end developer</p>
@@ -72,7 +72,7 @@ const Team = () => {
                     </p>
                 </div>
 
-                <div className="memberCard">
+                <div className="memberCardBuceta">
                     <div className="ireneBucetaIMG" />
                     <p className="memberName">Irene Buceta</p>
                     <p className="memberOccupation">Front-end developer</p>
@@ -82,7 +82,7 @@ const Team = () => {
                     </p>
                 </div>
 
-                <div className="memberCard">
+                <div className="memberCardBenaiges">
                     <div className="joanBenaigesIMG" />
                     <p className="memberName">Joan Benaiges</p>
                     <p className="memberOccupation">Front-end developer</p>
@@ -92,7 +92,7 @@ const Team = () => {
                     </p>
                 </div>
 
-                <div className="memberCard">
+                <div className="memberCardLopez">
                     <div className="rodrigoLopezIMG" />
                     <p className="memberName">Rodrigo López</p>
                     <p className="memberOccupation">Back-end developer</p>
