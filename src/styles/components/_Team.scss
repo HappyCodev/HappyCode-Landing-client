@@ -3,6 +3,7 @@
     width: 15.6875rem;
     border: 0.75rem solid #292A2A;
     border-radius: 50%;
+    background-origin: border-box;
 }
 
 @mixin logosStyle {
