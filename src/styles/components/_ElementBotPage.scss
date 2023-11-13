@@ -1,252 +1,98 @@
-.ElementBotton {
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: end;
+.element-bottom {
     margin-bottom: 81px;
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
 
-    .div-Projects {
+    .dropdown {
         @include rowJB;
-        position: relative;
-        background: linear-gradient(90deg, #38369A 27.6%, rgba(56, 54, 154, 0.00) 100%);
+        height: 148px;
         width: 778px;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
-        align-items: center;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         cursor: pointer;
+        transition: height 0.6s;
+        overflow: hidden;
 
         a {
-            text-decoration: none
+            text-decoration: none;
+            color: #F8F7F3;
         }
 
-        .element-Projects {
-            @include rowJB;
-            align-items: start;
-            width: 100%;
-            color: #F8F7F3;
-            transition: all;
-            transition-duration: 0.5s;
-            display: block;
+        .link-services {
+            color: rgba(45, 44, 42, 1);
+        }
 
-
-
-            h3 {
-                padding-top: 40px;
-                padding-left: 70px;
-                font-size: 55px;
-            }
+        h3 {
+            padding-top: 40px;
+            padding-left: 70px;
+            font-size: 3.4375rem;
 
             span {
-                font-size: 30px;
-                margin-left: 28px;
-
+                font-size: 1.875rem;
+                width: 100%;
             }
-
-            p {
-                font-size: 24px;
-                margin-left: 110px;
-                margin-top: 10px;
-            }
-
-
         }
 
+        p {
 
-
-        .active-Projects {
-            height: 320px;
+            font-family: 'CabinetGrotesk-Regular', sans-serif;
+            font-size: 1.5rem;
+            max-width: 75%;
+            margin-left: 110px;
+            margin-top: 10px;
+            transition: opacity 0.6s;
+            opacity: 0;
         }
-
-        .no-active-Projects {
-            height: 148px;
-
-        }
-
-
-
     }
 
-    .div-About {
-        @include rowJB;
-        position: relative;
+    .projects {
+        background: linear-gradient(90deg, #38369A 27.6%, rgba(56, 54, 154, 0.00) 100%);
+
+        &:hover {
+            height: 320px;
+
+            p {
+                opacity: 1;
+                transition: opacity 0.6s;
+            }
+        }
+
+        &:active {
+            mix-blend-mode: plus-lighter;
+        }
+    }
+
+    .about-us {
         background: linear-gradient(90deg, #5799F7 18.75%, rgba(87, 153, 247, 0.00) 100%);
-        width: 778px;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        align-items: center;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        cursor: pointer;
 
-        a {
-            text-decoration: none
-        }
-
-        .element-About {
-            @include rowJB;
-            align-items: start;
-            width: 100%;
-            color: #F8F7F3;
-            transition: all;
-            transition-duration: 0.5s;
-            display: block;
-        }
-
-        .active-About {
+        &:hover {
             height: 320px;
-        }
-
-        .no-active-About {
-            height: 148px;
-
-        }
-
-
-
-        h3 {
-            padding-top: 40px;
-            padding-left: 70px;
-            font-size: 55px;
-        }
-
-        p {
-            font-size: 24px;
-            margin-left: 110px;
-            margin-top: 10px;
-        }
-    }
-
-
-
-
-    .div-Services {
-        @include rowJB;
-        position: relative;
-        background: linear-gradient(90deg, #08FFB8 34.38%, rgba(8, 255, 184, 0.00) 100%);
-        width: 778px !important;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        align-items: center;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        cursor: pointer;
-
-        a {
-            text-decoration: none
-        }
-
-        .element-Services {
-            @include rowJB;
-            align-items: start;
-            width: 80%;
-            color: black;
-            transition: all;
-            transition-duration: 0.5s;
-            display: block;
-        }
-
-        .active-Services {
-            height: 320px;
-        }
-
-        .no-active-Services {
-            height: 148px;
-
-        }
-
-
-        h3 {
-            padding-top: 40px;
-            padding-left: 70px;
-            font-size: 55px;
-        }
-
-        p {
-            font-size: 24px;
-            margin-left: 110px;
-            margin-top: 10px;
-        }
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .div-Services {
-        @include rowJB;
-        position: relative;
-        background: linear-gradient(90deg, #08FFB8 34.38%, rgba(8, 255, 184, 0.00) 100%);
-        width: 40%;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        align-items: center;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        cursor: pointer;
-
-        a {
-            text-decoration: none
-        }
-
-        .element-Service {
-            @include rowJB;
-            align-items: start;
-            width: 80%;
-            color: black;
-            transition: all;
-            transition-duration: 0.5s;
-
-        }
-
-        .active-Services {
-            height: 320px;
-        }
-
-        .no-Active-Services {
-            height: 148px;
-
-        }
-
-        .div-h3 {
-            display: block;
-
-            h3 {
-                padding-top: 40px;
-                padding-left: 70px;
-                font-size: 55px;
-            }
 
             p {
-                font-size: 24px;
-                margin-left: 110px;
-                margin-top: 10px;
+                opacity: 1;
+                transition: opacity 0.6s;
             }
+        }
+
+        &:active {
+            mix-blend-mode: plus-lighter;
         }
     }
 
+    .services {
+        background: linear-gradient(90deg, #08FFB8 34.38%, rgba(8, 255, 184, 0.00) 100%);
 
+        &:hover {
+            height: 320px;
+
+            p {
+                opacity: 1;
+                transition: opacity 0.6s;
+            }
+        }
+
+        &:active {
+            mix-blend-mode: plus-lighter;
+        }
+    }
 }

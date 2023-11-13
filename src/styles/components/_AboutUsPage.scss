@@ -1,0 +1,22 @@
+.AboutUsImage {
+    background-image: url("/src/assets/aboutusbanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 33vw;
+    width: 100vw;
+    position: relative;
+}
+
+.title {
+    @include h2Style();
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+h2 {
+    @include h2Style()
+}

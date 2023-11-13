@@ -30,7 +30,7 @@
 .Team {
     margin-top: 10%;
     color: white;
-    font-family: 'CabinetGrotesk', sans-serif;
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
 
 
     h1 {
@@ -45,6 +45,7 @@
 
     .membersRowBot {
         @include membersRow();
+        font-family: 'CabinetGrotesk-Bold', sans-serif;
     }
 
     .memberName {
@@ -54,12 +55,6 @@
         margin-top: 12%;
     }
 
-    .memberOccupation {
-        font-size: 0.9375rem;
-        font-weight: 300;
-        line-height: 1.3125rem;
-        margin-top: 12%;
-    }
 
     .memberContact {
         margin-top: 12%;
@@ -72,6 +67,12 @@
             @include logosStyle();
             width: 15px;
             height: 13px;
+
+        .memberOccupation {
+            font-size: 0.9375rem;
+            font-family: 'CabinetGrotesk-Light', sans-serif;
+            line-height: 1.3125rem;
+            margin-top: 12%;
         }
 
         .emailLogo {
@@ -199,6 +200,7 @@
     text-align: center;
 
     .lets-meet-form-button-border {
+
         button {
             color: #030303;
             width: 95.66px;
@@ -215,16 +217,23 @@
     background: linear-gradient(180deg, #08FFB8 13.4%, #5799F7 86.6%);
     background-clip: content-box;
     border-radius: 3.125rem;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
 
     .lets-meet-form-button-border {
         border: 2px solid transparent;
         background-clip: content-box;
         background-color: #232424;
+        width: fit-content;
         border-radius: 3.125rem;
 
+
         button {
-            width: 91.66px;
-            height: 37.66px;
+            width: 160.66px;
+            height: 50.66px;
             @include transparent_text;
             box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
             background-image: linear-gradient(to bottom left, #08FFB8 13.4%, #5799F7 86.6%);
